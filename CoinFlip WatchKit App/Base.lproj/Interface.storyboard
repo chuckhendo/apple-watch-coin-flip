@@ -13,7 +13,7 @@
                         <button alignment="left" verticalAlignment="center" id="Y9y-6K-2eA">
                             <group key="contentGroup" width="1" height="128" alignment="left" id="rWw-wE-8qx">
                                 <items>
-                                    <imageView width="1" height="1" alignment="center" verticalAlignment="center" image="frame" initiallyAnimated="NO" id="gU2-oc-rYL"/>
+                                    <imageView width="1" height="1" alignment="center" verticalAlignment="center" image="coin" contentMode="scaleAspectFill" initiallyAnimated="NO" id="gU2-oc-rYL"/>
                                 </items>
                             </group>
                             <connections>

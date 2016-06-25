@@ -31,14 +31,17 @@ class InterfaceController: WKInterfaceController {
     }
     
     func animateCoin(result:UInt32) {
-        let iterations = Int(20)
-        NSLog("fest%d", iterations)
-        coin.startAnimatingWithImagesInRange(NSRange(location: 0, length: 2), duration: 0.1, repeatCount: iterations)
-        delay(1.9) {
-            self.coin.setImageNamed("frame\(result + 1)")
-        }
+        let iterations = Int(2)
+        let duration = Double(0.5)
+        let totalFrames = 8
+        let timePerFrame = duration / Double(totalFrames)
 
-//        coin.startAnimating()
+        coin.startAnimatingWithImagesInRange(NSRange(location: 1, length: totalFrames), duration: duration, repeatCount: iterations)
+        delay((Double(iterations) * duration) - timePerFrame) {
+            if(result == 1) {
+                self.coin.startAnimatingWithImagesInRange(NSRange(location: 1, length: 4), duration: timePerFrame * 4, repeatCount: 1)
+            }
+        }
     }
     
     func delay(delay:Double, closure:()->()) {
@@ -53,15 +56,9 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func flipCoin() {
         self.coin.stopAnimating()
-        self.coin.setImageNamed("frame")
+        self.coin.setImageNamed("coin")
         let randomNum = arc4random_uniform(2)
         animateCoin(randomNum)
-//        let result = randomNum == 1 ? "Heads" : "Tails"
-        
-        delay(0.3) {
-//            self.button.setTitle(result)
-            
-        }
     }
 
 }
