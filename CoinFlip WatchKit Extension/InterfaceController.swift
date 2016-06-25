@@ -12,7 +12,8 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
     @IBOutlet var button: WKInterfaceButton!
-
+    @IBOutlet var coin: WKInterfaceImage!
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
@@ -29,6 +30,17 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
     
+    func animateCoin(result:UInt32) {
+        let iterations = Int(20)
+        NSLog("fest%d", iterations)
+        coin.startAnimatingWithImagesInRange(NSRange(location: 0, length: 2), duration: 0.1, repeatCount: iterations)
+        delay(1.9) {
+            self.coin.setImageNamed("frame\(result + 1)")
+        }
+
+//        coin.startAnimating()
+    }
+    
     func delay(delay:Double, closure:()->()) {
         dispatch_after(
             dispatch_time(
@@ -40,11 +52,15 @@ class InterfaceController: WKInterfaceController {
     
     
     @IBAction func flipCoin() {
-        button.setTitle("Flipping...")
+        self.coin.stopAnimating()
+        self.coin.setImageNamed("frame")
         let randomNum = arc4random_uniform(2)
-        let result = randomNum == 1 ? "Heads" : "Tails"
+        animateCoin(randomNum)
+//        let result = randomNum == 1 ? "Heads" : "Tails"
+        
         delay(0.3) {
-            self.button.setTitle(result)
+//            self.button.setTitle(result)
+            
         }
     }
 

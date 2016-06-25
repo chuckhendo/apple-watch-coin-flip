@@ -10,7 +10,12 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="CoinFlip_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="left" verticalAlignment="center" title="Flip" id="Y9y-6K-2eA">
+                        <button alignment="left" verticalAlignment="center" id="Y9y-6K-2eA">
+                            <group key="contentGroup" width="1" height="128" alignment="left" id="rWw-wE-8qx">
+                                <items>
+                                    <imageView width="1" height="1" alignment="center" verticalAlignment="center" image="frame" initiallyAnimated="NO" id="gU2-oc-rYL"/>
+                                </items>
+                            </group>
                             <connections>
                                 <action selector="flipCoin" destination="AgC-eL-Hgc" id="tWh-FP-lPn"/>
                             </connections>
@@ -18,6 +23,7 @@
                     </items>
                     <connections>
                         <outlet property="button" destination="Y9y-6K-2eA" id="Dvo-ij-5J8"/>
+                        <outlet property="coin" destination="gU2-oc-rYL" id="ObE-1j-39C"/>
                     </connections>
                 </controller>
             </objects>

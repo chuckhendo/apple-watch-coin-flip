@@ -322,6 +322,7 @@
 				TargetAttributes = {
 					DFC422CD1D1C8183009713C6 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = U3MNE7XA5Y;
 					};
 					DFC422E11D1C8183009713C6 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -333,9 +334,11 @@
 					};
 					DFC422F51D1C8183009713C6 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = U3MNE7XA5Y;
 					};
 					DFC423041D1C8183009713C6 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = U3MNE7XA5Y;
 					};
 				};
 			};
@@ -584,10 +587,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "CoinFlip WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chuckhendo.CoinFlip.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -599,10 +605,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "CoinFlip WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chuckhendo.CoinFlip.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -614,11 +623,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = CoinFlip_WatchKit_Extension;
 				INFOPLIST_FILE = "CoinFlip WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chuckhendo.CoinFlip.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -630,11 +642,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				IBSC_MODULE = CoinFlip_WatchKit_Extension;
 				INFOPLIST_FILE = "CoinFlip WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chuckhendo.CoinFlip.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -646,10 +661,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CoinFlip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chuckhendo.CoinFlip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -657,10 +675,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CoinFlip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chuckhendo.CoinFlip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -729,6 +750,7 @@
 				DFC423191D1C8183009713C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFC4231B1D1C8183009713C6 /* Build configuration list for PBXNativeTarget "CoinFlip WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -737,6 +759,7 @@
 				DFC4231D1D1C8183009713C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFC4231F1D1C8183009713C6 /* Build configuration list for PBXNativeTarget "CoinFlip" */ = {
 			isa = XCConfigurationList;
@@ -745,6 +768,7 @@
 				DFC423211D1C8183009713C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFC423221D1C8183009713C6 /* Build configuration list for PBXNativeTarget "CoinFlipTests" */ = {
 			isa = XCConfigurationList;
@@ -753,6 +777,7 @@
 				DFC423241D1C8183009713C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFC423251D1C8183009713C6 /* Build configuration list for PBXNativeTarget "CoinFlipUITests" */ = {
 			isa = XCConfigurationList;
@@ -761,6 +786,7 @@
 				DFC423271D1C8183009713C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
