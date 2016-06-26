@@ -33,13 +33,15 @@ class InterfaceController: WKInterfaceController {
     func animateCoin(result:UInt32) {
         let iterations = Int(2)
         let duration = Double(0.5)
-        let totalFrames = 8
+        let totalFrames = 16
         let timePerFrame = duration / Double(totalFrames)
 
-        coin.startAnimatingWithImagesInRange(NSRange(location: 1, length: totalFrames), duration: duration, repeatCount: iterations)
+        coin.startAnimatingWithImagesInRange(NSRange(location: 0, length: totalFrames), duration: duration, repeatCount: iterations)
         delay((Double(iterations) * duration) - timePerFrame) {
             if(result == 1) {
-                self.coin.startAnimatingWithImagesInRange(NSRange(location: 1, length: 4), duration: timePerFrame * 4, repeatCount: 1)
+                self.coin.startAnimatingWithImagesInRange(NSRange(location: 0, length: totalFrames/2 + 1), duration: timePerFrame * 4, repeatCount: 1)
+            } else {
+                self.coin.setImageNamed("coin0")
             }
         }
     }
